@@ -21,6 +21,12 @@ Once *Oh My Zsh* has been installed use the following line to install *Powerleve
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
+### 3. Alias dependencies
+- `nvim`
+- `xclip`
+- `amixer`
+- `brightnessctl`
+
 ## Applying the configuration
 To apply these configurations, move `p10k.zsh` to your `$HOME` directory as `.p10k.zsh` and `zshrc` as `.zshrc`.
 Ensure to remove any unnecessary aliases or functions from the `zshrc` file.
