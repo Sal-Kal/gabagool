@@ -1,2 +1,2 @@
-# gabagool
+# Gabagool
 My linux dotfiles
