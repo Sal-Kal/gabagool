@@ -7,4 +7,5 @@
   ln -s /home/sal/gabagool/xorg/touchpad-tap.conf /etc/X11/xorg.conf.d/touchpad-tap.conf
   ln -s /home/sal/gabagool/xorg/mouse-pointer.conf /etc/X11/xorg.conf.d/mouse-pointer.conf
   ln -s /home/sal/gabagool/wallpapers ~/Pictures
+  ln -s /home/sal/gabagool/picom ~/.config/
   
