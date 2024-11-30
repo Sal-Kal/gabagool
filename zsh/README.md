@@ -27,6 +27,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 - `amixer`
 - `brightnessctl`
 
+### 4. Plugin dependencies
+- `zsh-autosuggestions`
+
 ## Applying the configuration
 To apply these configurations, move `p10k.zsh` to your `$HOME` directory as `.p10k.zsh` and `zshrc` as `.zshrc`.
 Ensure to remove any unnecessary aliases or functions from the `zshrc` file.
