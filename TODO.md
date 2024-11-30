@@ -4,9 +4,9 @@
 - [x] Configure i3 keybindings as per vim motions.
 - [x] Configure i3 styles.
 - [x] Install and configure picom for i3.
+- [ ] Configure Neovim.
 - [ ] Install and configure eww bar.
 - [ ] Decide on an app launcher and configure it (probably rofi).
-- [ ] Configure Neovim.
 - [ ] Style firefox.
 - [ ] Automate symlinks with stow and create a single README at root level.
 - [ ] Figure out dynamic workspace numbering for i3.
@@ -14,5 +14,5 @@
 - [ ] Figure out how scratchpad works and implement minimization.
 - [ ] Add default theme configuration for gtk applications.
 - [ ] Apply SF font system wide.
-- [ ] Style p10k (get rid of the cyan).
-- [ ] Style tmux (get rid of the cyan).
+- [ ] Style p10k (get rid of the cyan and implement ayu dark color scheme).
+- [ ] Style tmux (get rid of the cyan and implement ayu dark color scheme).

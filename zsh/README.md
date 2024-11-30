@@ -26,6 +26,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 - `xclip`
 - `amixer`
 - `brightnessctl`
+- `fzf`
 
 ### 4. Plugin dependencies
 - `zsh-autosuggestions`

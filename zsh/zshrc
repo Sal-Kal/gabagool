@@ -120,5 +120,7 @@ lit() {
 
 alias clip="xclip -selection clipboard"
 
+alias go="cd ~ && cd \$(find * -type d | fzf)"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
