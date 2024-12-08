@@ -1,4 +1,7 @@
 -- Keymaps
+require("keymaps.telescope")
+require("keymaps.harpoon")
+
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>fs", "<cmd>w<CR>")
 vim.keymap.set("n", "<space>bk", "<cmd>q!<CR>")
