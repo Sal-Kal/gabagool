@@ -1,5 +1,7 @@
 require("config.lazy")
 require("keymaps.general")
+require("keymaps.telescope")
+require("keymaps.harpoon")
 
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
