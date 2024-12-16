@@ -19,7 +19,7 @@ return {
         vim.keymap.set("n", "<C-p>", function()
             ui.nav_file(4)
         end, { desc = "Harpoon window 4" })
-        vim.keymap.set("n", "<S-j>", ui.nav_next, { desc = "Harpoon next window" })
-        vim.keymap.set("n", "<S-K>", ui.nav_prev, { desc = "Harpoon prev window" })
+        vim.keymap.set("n", "<leader>hi", ui.nav_next, { desc = "Harpoon next window" })
+        vim.keymap.set("n", "<leader>ho", ui.nav_prev, { desc = "Harpoon prev window" })
     end,
 }

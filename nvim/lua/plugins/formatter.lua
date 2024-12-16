@@ -31,5 +31,6 @@ return {
                 timeout_ms = 500,
             })
         end, { desc = "Format files using conform" })
+        vim.o.formatexpr = "v:lua.require'conform'.format_expr()"
     end,
 }

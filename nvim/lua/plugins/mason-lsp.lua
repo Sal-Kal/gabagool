@@ -4,6 +4,16 @@ return {
         "neovim/nvim-lspconfig",
         "williamboman/mason.nvim",
         "WhoIsSethDaniel/mason-tool-installer.nvim",
+        -- lsp for vim global variables
+        {
+            "folke/lazydev.nvim",
+            ft = "lua",
+            opts = {
+                library = {
+                    { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+                },
+            },
+        },
     },
     config = function()
         local mason_lspconfig = require("mason-lspconfig")
