@@ -31,6 +31,16 @@ return {
                 timeout_ms = 500,
             })
         end, { desc = "Format files using conform" })
+        vim.api.nvim_create_autocmd("InsertLeave", {
+            desc = "Format after leaving insert mode",
+            callback = function()
+                conform.format({
+                    lsp_fallback = true,
+                    async = false,
+                    timeout_ms = 500,
+                })
+            end,
+        })
         vim.o.formatexpr = "v:lua.require'conform'.format_expr()"
     end,
 }
