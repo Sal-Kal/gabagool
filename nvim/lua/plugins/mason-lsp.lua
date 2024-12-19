@@ -14,10 +14,13 @@ return {
                 },
             },
         },
+        -- code completion
+        "Saghen/blink.cmp",
     },
     config = function()
         local mason_lspconfig = require("mason-lspconfig")
         local mason_tool_installer = require("mason-tool-installer")
+        local capabilities = require("blink.cmp").get_lsp_capabilities()
         mason_lspconfig.setup({
             -- ensure install for lsp
             ensure_installed = {
@@ -30,7 +33,7 @@ return {
         })
         mason_lspconfig.setup_handlers({
             function(server_name)
-                require("lspconfig")[server_name].setup({})
+                require("lspconfig")[server_name].setup({ capabilities = capabilities })
             end,
         })
         mason_tool_installer.setup({
