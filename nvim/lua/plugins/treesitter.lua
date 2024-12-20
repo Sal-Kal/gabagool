@@ -34,6 +34,10 @@ return {
                     node_decremental = "si",
                 },
             },
+            indent = {
+                enable = true,
+                disable = {},
+            },
         })
     end,
 }

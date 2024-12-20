@@ -37,6 +37,10 @@ vim.keymap.set({ "n", "v" }, "d", '"_d')
 vim.keymap.set("n", "dd", '"_dd')
 vim.keymap.set({ "n", "v" }, "D", '"_D')
 
+vim.keymap.set({ "n", "v" }, "c", '"_c')
+vim.keymap.set("n", "cc", '"_cc')
+vim.keymap.set({ "n", "v" }, "C", '"_C')
+
 -- Prevent visual mode paste from yanking replaced text
 vim.keymap.set("x", "p", '"_dP')
 
