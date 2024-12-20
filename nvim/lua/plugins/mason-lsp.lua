@@ -21,6 +21,8 @@ return {
         local mason_lspconfig = require("mason-lspconfig")
         local mason_tool_installer = require("mason-tool-installer")
         local capabilities = require("blink.cmp").get_lsp_capabilities()
+        local mason = require("mason")
+        mason.setup()
         mason_lspconfig.setup({
             -- ensure install for lsp
             ensure_installed = {

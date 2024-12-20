@@ -31,3 +31,15 @@ vim.keymap.set("n", "ti", "<cmd>tabprev<CR>")
 -- Quickfix navigation
 vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>")
 vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>")
+
+-- Prevent delete commands from yanking (normal, visual, and visual-block modes)
+vim.keymap.set({ "n", "v" }, "d", '"_d')
+vim.keymap.set("n", "dd", '"_dd')
+vim.keymap.set({ "n", "v" }, "D", '"_D')
+
+-- Prevent visual mode paste from yanking replaced text
+vim.keymap.set("x", "p", '"_dP')
+
+-- Cut paste behavior.
+vim.keymap.set("n", "<C-x>", "<cmd>delete<CR>")
+vim.keymap.set("x", "<C-x>", ":delete<CR>")
