@@ -7,7 +7,7 @@ vim.keymap.set("n", "<leader><leader>x", "<cmd>source %<CR>")
 vim.keymap.set("i", "jk", "<Esc>")
 vim.keymap.set("n", "<leader>fs", "<cmd>w<CR>")
 vim.keymap.set("n", "<leader>bk", "<cmd>q!<CR>")
-vim.keymap.set("n", "<leader>o", "<cmd>Ex<CR>")
+-- vim.keymap.set("n", "<leader>o", "<cmd>Ex<CR>")
 
 -- Indenting
 -- vim.keymap.set("n", "<leader>i", "mxgg=G'x")
@@ -25,8 +25,16 @@ vim.keymap.set("n", "bi", "<cmd>bprev<CR>")
 
 -- Tabs
 vim.keymap.set("n", "tn", "<cmd>tabnew<CR>")
-vim.keymap.set("n", "to", "<cmd>tabnext<CR>")
-vim.keymap.set("n", "ti", "<cmd>tabprev<CR>")
+vim.keymap.set("n", "tl", "<cmd>tabnext<CR>")
+vim.keymap.set("n", "th", "<cmd>tabprev<CR>")
+vim.keymap.set("n", "tu", "1gt", { noremap = true, silent = true })
+vim.keymap.set("n", "ti", "2gt", { noremap = true, silent = true })
+vim.keymap.set("n", "to", "3gt", { noremap = true, silent = true })
+vim.keymap.set("n", "tp", "4gt", { noremap = true, silent = true })
+vim.keymap.set("n", "t7", "5gt", { noremap = true, silent = true })
+vim.keymap.set("n", "t8", "6gt", { noremap = true, silent = true })
+vim.keymap.set("n", "t9", "7gt", { noremap = true, silent = true })
+vim.keymap.set("n", "t0", "8gt", { noremap = true, silent = true })
 
 -- Quickfix navigation
 vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>")
