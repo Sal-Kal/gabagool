@@ -4,13 +4,16 @@
 - `scan <on/off>`: Scan for available bluetooth devices.
 - `devices`: List available devices after scanning.
 - `pair <MAC_ID>`: Used to pair to a particular device, use the mac address found while executing `devices` command.
+- `remove <MAC_ID>`: Used to remove or forget a particular device, use the mac address found while executing `devices` command.
 - `connect <MAC_ID>`: Used to connect to a paired device.
+- `disconnect <MAC_ID>`: Used to disconnect a paired device.
 
 ## NMCLI
 
 - `radio wifi`: Check if Wi-Fi is enabled or not.
 - `radio wifi <on/off>`: Enable or disable Wi-Fi.
 - `dev wifi list`: Scan existing Wi-Fi networks.
+
 ```
 IN-USE  BSSID              SSID        MODE   CHAN  RATE        SIGNAL  BARS  SECURITY
         B4:A7:C6:6C:E9:43  saish_2ghz  Infra  6     130 Mbit/s  77      ▂▄▆_  WPA2
@@ -21,7 +24,9 @@ IN-USE  BSSID              SSID        MODE   CHAN  RATE        SIGNAL  BARS  SE
         50:D4:F7:7D:0B:9F  PRASAD_EXT  Infra  11    270 Mbit/s  19      ▂___  WPA1 WPA2
 
 ```
+
 - `dev wifi connect <SSID> --ask`: Connecting to a password protected Wi-Fi network. Adding the `--ask` flag prompts you to enter the password.
+
 ```
 nmcli dev wifi connect saish_5ghz --ask
 ```
