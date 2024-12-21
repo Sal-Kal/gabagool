@@ -13,6 +13,7 @@ return {
                 find_files = {
                     theme = "ivy",
                     hidden = true,
+                    file_ignore_patterns = { "^.git/" },
                 },
 
                 live_grep = {
