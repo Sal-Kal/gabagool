@@ -12,6 +12,7 @@ return {
             pickers = {
                 find_files = {
                     theme = "ivy",
+                    hidden = true,
                 },
 
                 live_grep = {
@@ -45,5 +46,8 @@ return {
             builtin.lsp_references,
             { desc = "Telescope lsp references" }
         )
+        vim.keymap.set("n", "gd", function()
+            builtin.lsp_definitions({ jump_type = "tab" })
+        end, { desc = "Telescope go to definition" })
     end,
 }

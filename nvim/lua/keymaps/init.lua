@@ -22,6 +22,7 @@ vim.keymap.set("n", "<C-l>", "zz")
 -- Buffers
 vim.keymap.set("n", "bo", "<cmd>bnext<CR>")
 vim.keymap.set("n", "bi", "<cmd>bprev<CR>")
+vim.keymap.set("n", "bl", "<cmd>buffers<CR>")
 
 -- Tabs
 vim.keymap.set("n", "tn", "<cmd>tabnew<CR>")
@@ -45,6 +46,7 @@ vim.keymap.set({ "n", "v" }, "d", '"_d')
 vim.keymap.set("n", "dd", '"_dd')
 vim.keymap.set({ "n", "v" }, "D", '"_D')
 
+-- Prevent change commands from yanking (normal, visual, and visual-block modes)
 vim.keymap.set({ "n", "v" }, "c", '"_c')
 vim.keymap.set("n", "cc", '"_cc')
 vim.keymap.set({ "n", "v" }, "C", '"_C')
@@ -52,6 +54,10 @@ vim.keymap.set({ "n", "v" }, "C", '"_C')
 -- Prevent visual mode paste from yanking replaced text
 vim.keymap.set("x", "p", '"_dP')
 
--- Cut paste behavior.
-vim.keymap.set("n", "<C-x>", "<cmd>delete<CR>")
-vim.keymap.set("x", "<C-x>", ":delete<CR>")
+-- Cut and paste behaviour
+vim.keymap.set("n", "<C-x>", "dd", { remap = false, desc = "Delete and yank (normal mode)" })
+vim.keymap.set("v", "<C-x>", "d", { remap = false, desc = "Delete and yank (visual mode)" })
+
+-- Quit all
+vim.keymap.set("n", "<leader>wq", ":wqa<CR>")
+vim.keymap.set("n", "<leader>q", ":qa!<CR>")
