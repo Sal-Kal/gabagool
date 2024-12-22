@@ -16,7 +16,6 @@
 - [x] Add indent line indicators for html and jsx tags.
 - [x] Figure out telescope to ignore gitignore files.
 - [x] Figure out git with neovim.
-- [ ] Figure out indent guide to be activated only when cursor is within scope. Check lazy git's configuration.
 - [ ] Figure out nvim sessions.
 - [ ] Add a jsconfig file for easy imports in react projects.
 - [x] Allow hidden files in telescope and remove files like node_modules from it's search pool.

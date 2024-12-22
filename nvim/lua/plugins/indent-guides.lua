@@ -3,5 +3,7 @@ return {
     main = "ibl",
     ---@module "ibl"
     ---@type ibl.config
-    opts = {},
+    opts = {
+        scope = { show_start = false, show_end = false },
+    },
 }
