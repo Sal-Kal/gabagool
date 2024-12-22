@@ -23,6 +23,7 @@ vim.keymap.set("n", "<C-l>", "zz")
 vim.keymap.set("n", "bl", "<cmd>bnext<CR>")
 vim.keymap.set("n", "bh", "<cmd>bprev<CR>")
 vim.keymap.set("n", "bb", "<cmd>buffers<CR>")
+vim.keymap.set("n", "bd", "<cmd>%bd|e#<CR>")
 
 -- Tabs
 vim.keymap.set("n", "tn", "<cmd>tabnew<CR>")
