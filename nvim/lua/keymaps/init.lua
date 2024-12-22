@@ -20,9 +20,9 @@ vim.keymap.set("v", "<C-k>", "<C-u>zz")
 vim.keymap.set("n", "<C-l>", "zz")
 
 -- Buffers
-vim.keymap.set("n", "bo", "<cmd>bnext<CR>")
-vim.keymap.set("n", "bi", "<cmd>bprev<CR>")
-vim.keymap.set("n", "bl", "<cmd>buffers<CR>")
+vim.keymap.set("n", "bl", "<cmd>bnext<CR>")
+vim.keymap.set("n", "bh", "<cmd>bprev<CR>")
+vim.keymap.set("n", "bb", "<cmd>buffers<CR>")
 
 -- Tabs
 vim.keymap.set("n", "tn", "<cmd>tabnew<CR>")
@@ -61,3 +61,7 @@ vim.keymap.set("v", "<C-x>", "d", { remap = false, desc = "Delete and yank (visu
 -- Quit all
 vim.keymap.set("n", "<leader>wq", ":wqa<CR>")
 vim.keymap.set("n", "<leader>q", ":qa!<CR>")
+
+-- Command line navigation
+vim.keymap.set("c", "<Up>", "<C-p>", { noremap = true })
+vim.keymap.set("c", "<Down>", "<C-n>", { noremap = true })

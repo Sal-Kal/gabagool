@@ -11,10 +11,15 @@
 - [x] Add auto pairs plugin for neovim.
 - [x] Add nerd tree to neovim
 - [x] Get rid of harpoon and replace it with inbuilt tabs and add keybindings to them.
-- [ ] Figure out go to defiinition in lsp.
-- [ ] Figure out auto imports.
-- [ ] Add indent line indicators for html and jsx tags.
-- [ ] Allow hidden files in telescope and remove files like node_modules from it's search pool.
+- [x] Figure out go to definition in lsp.
+- [x] Figure out auto imports.
+- [x] Add indent line indicators for html and jsx tags.
+- [x] Figure out telescope to ignore gitignore files.
+- [x] Figure out git with neovim.
+- [ ] Figure out indent guide to be activated only when cursor is within scope. Check lazy git's configuration.
+- [ ] Figure out nvim sessions.
+- [ ] Add a jsconfig file for easy imports in react projects.
+- [x] Allow hidden files in telescope and remove files like node_modules from it's search pool.
 - [x] Fix the keymap issue for leap.nvim.
 - [x] Change code completion keybindings in neovim.
 
