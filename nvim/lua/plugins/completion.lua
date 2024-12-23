@@ -9,5 +9,13 @@ return {
             nerd_font_variant = "mono",
         },
         signature = { enabled = true },
+        sources = {
+            cmdline = {},
+        },
+        completion = {
+            ghost_text = {
+                enabled = true,
+            },
+        },
     },
 }
