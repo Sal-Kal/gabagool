@@ -66,3 +66,6 @@ vim.keymap.set("n", "<leader>q", ":qa!<CR>")
 -- Command line navigation
 vim.keymap.set("c", "<Up>", "<C-p>", { noremap = true })
 vim.keymap.set("c", "<Down>", "<C-n>", { noremap = true })
+
+-- No highlight
+vim.keymap.set("n", "dh", ":nohl<CR>", { desc = "Remove search char highlights" })
