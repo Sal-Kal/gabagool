@@ -12,5 +12,13 @@ return {
             fg = "#000000",
             bg = "#ffffff",
         })
+        vim.api.nvim_set_hl(0, "Pmenu", {
+            fg = "#e6e1cf",
+            bg = "#0f1419",
+        })
+        vim.api.nvim_set_hl(0, "PmenuSel", {
+            bg = "#e6e1cf",
+            fg = "#0f1419",
+        })
     end,
 }
