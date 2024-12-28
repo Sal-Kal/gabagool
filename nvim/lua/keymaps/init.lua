@@ -39,6 +39,8 @@ vim.keymap.set("n", "t9", "7gt", { noremap = true, silent = true })
 vim.keymap.set("n", "t0", "8gt", { noremap = true, silent = true })
 
 -- Quickfix navigation
+vim.keymap.set("n", "<leader>co", "<cmd>copen<CR>")
+vim.keymap.set("n", "<leader>cc", "<cmd>cclose<CR>")
 vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>")
 vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>")
 
@@ -67,3 +69,4 @@ vim.keymap.set("n", "dh", ":nohl<CR>", { desc = "Remove search char highlights" 
 
 -- Window navigation
 vim.keymap.set("n", "<leader>w", "<C-w>")
+vim.keymap.set("n", "<leader>gW", "<C-w><C-O>")

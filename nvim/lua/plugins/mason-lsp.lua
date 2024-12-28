@@ -46,5 +46,12 @@ return {
                 "eslint_d",
             },
         })
+        -- LSP Keymaps
+        vim.keymap.set("n", "<leader>dj", function()
+            vim.diagnostic.goto_next()
+        end)
+        vim.keymap.set("n", "<leader>dk", function()
+            vim.diagnostic.goto_prev()
+        end)
     end,
 }

@@ -41,6 +41,7 @@ return {
         end, { desc = "Edit neovim cnofig from anywhere" })
         vim.keymap.set("n", "<leader>ts", builtin.live_grep, { desc = "Telescope live grep" })
         vim.keymap.set("n", "<leader>th", builtin.help_tags, { desc = "Telescope help tags" })
+        vim.keymap.set("n", "<leader>tq", builtin.quickfix, { desc = "Telescope quickfix" })
         vim.keymap.set(
             "n",
             "<leader>tr",
