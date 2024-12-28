@@ -49,7 +49,7 @@ return {
             { desc = "Telescope lsp references" }
         )
         vim.keymap.set("n", "gd", function()
-            builtin.lsp_definitions({ jump_type = "tab" })
+            builtin.lsp_definitions()
         end, { desc = "Telescope go to definition" })
     end,
 }
