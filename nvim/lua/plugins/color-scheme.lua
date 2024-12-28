@@ -1,6 +1,6 @@
 return {
-    "marko-cerovac/material.nvim",
+    "Shatur/neovim-ayu",
     config = function()
-        vim.cmd.colorscheme("material-deep-ocean")
+        vim.cmd.colorscheme("ayu-dark")
     end,
 }

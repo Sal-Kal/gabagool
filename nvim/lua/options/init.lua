@@ -11,7 +11,7 @@ vim.opt.inccommand = "split"
 vim.opt.ignorecase = true
 vim.opt.termguicolors = true
 vim.opt.splitbelow = true
-vim.opt.formatoptions = "jtcqla"
+-- vim.opt.formatoptions = "jtcqla"
 
 -- Custom tab label
 function _G.custom_tabline()
