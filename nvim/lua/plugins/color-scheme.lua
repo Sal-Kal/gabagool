@@ -6,19 +6,27 @@ return {
         vim.cmd("colorscheme ayu")
         vim.api.nvim_set_hl(0, "TabLine", {
             fg = "#e6e1cf",
-            bg = "#0f1419",
+            bg = "#000000",
         })
         vim.api.nvim_set_hl(0, "TabLineSel", {
             bg = "#e6e1cf",
-            fg = "#0f1419",
+            fg = "#000000",
         })
         vim.api.nvim_set_hl(0, "Pmenu", {
             fg = "#e6e1cf",
-            bg = "#0f1419",
+            bg = "#000000",
         })
         vim.api.nvim_set_hl(0, "PmenuSel", {
             bg = "#e6e1cf",
-            fg = "#0f1419",
+            fg = "#000000",
+        })
+        vim.api.nvim_set_hl(0, "Normal", {
+            fg = "#e6e1cf",
+            bg = "#000000",
+        })
+        vim.api.nvim_set_hl(0, "NormalFloat", {
+            fg = "#e6e1cf",
+            bg = "#000000",
         })
         vim.api.nvim_set_hl(0, "ErrorMsg", {
             fg = "#e6e1cf",
