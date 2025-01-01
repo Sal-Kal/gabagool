@@ -206,4 +206,4 @@ for_window [class="firefox-esr" title="Picture-in-Picture"] floating enable
 for_window [class="firefox-esr" title="Picture-in-Picture"] sticky enable
 
 # picom autostart
-exec_always --no-startup-id picom
+# exec_always --no-startup-id picom

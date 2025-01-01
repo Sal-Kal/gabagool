@@ -5,7 +5,8 @@
 - [x] Configure i3 styles.
 - [x] Install and configure picom for i3.
 - [x] Configure neovim.
-- [ ] Decide on an app launcher and configure it (probably rofi).
+- [x] Decide on an app launcher and configure it (probably rofi).
+- [ ] Refactor ROFI configs. Remove redundant files.
 - [ ] Install and configure eww bar.
 - [ ] Style firefox.
 - [ ] Automate symlinks with stow and create a single README at root level.
