@@ -1,36 +1,23 @@
 return {
-    -- "Shatur/neovim-ayu",
-    "ayu-theme/ayu-vim",
+    "Shatur/neovim-ayu",
+    priority = 1000,
     config = function()
-        vim.cmd('let ayucolor="dark"')
-        vim.cmd("colorscheme ayu")
-        vim.api.nvim_set_hl(0, "TabLine", {
-            fg = "#e6e1cf",
-            bg = "#000000",
+        require("ayu").setup({
+            overrides = {
+                Normal = { bg = "None" },
+                NormalFloat = { bg = "none" },
+                Pmenu = { bg = "None", fg = "#e6e1cf" },
+                IncSearch = { bg = "#e6e1cf", fg = "#000000" },
+                MiniTablineCurrent = {
+                    bg = "#e6e1cf",
+                    fg = "#000000",
+                },
+                MiniTablineHidden = {
+                    bg = "#000000",
+                    fg = "#e6e1cf",
+                },
+            },
         })
-        vim.api.nvim_set_hl(0, "TabLineSel", {
-            bg = "#e6e1cf",
-            fg = "#000000",
-        })
-        vim.api.nvim_set_hl(0, "Pmenu", {
-            fg = "#e6e1cf",
-            bg = "#000000",
-        })
-        vim.api.nvim_set_hl(0, "PmenuSel", {
-            bg = "#e6e1cf",
-            fg = "#000000",
-        })
-        vim.api.nvim_set_hl(0, "Normal", {
-            fg = "#e6e1cf",
-            bg = "#000000",
-        })
-        vim.api.nvim_set_hl(0, "NormalFloat", {
-            fg = "#e6e1cf",
-            bg = "#000000",
-        })
-        vim.api.nvim_set_hl(0, "ErrorMsg", {
-            fg = "#e6e1cf",
-            bg = "#0f1419",
-        })
+        vim.cmd.colorscheme("ayu-dark")
     end,
 }
