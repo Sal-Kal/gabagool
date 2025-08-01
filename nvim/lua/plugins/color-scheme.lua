@@ -16,6 +16,9 @@ return {
                     bg = "#000000",
                     fg = "#e6e1cf",
                 },
+                LineNr = {
+                    fg = "#3b3b3b",
+                },
             },
         })
         vim.cmd.colorscheme("ayu-dark")

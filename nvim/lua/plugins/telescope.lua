@@ -13,11 +13,14 @@ return {
                 find_files = {
                     theme = "ivy",
                     hidden = true,
-                    file_ignore_patterns = { "^.git/" },
+                    file_ignore_patterns = { ".git/*", "node_modules/*" },
                 },
-
                 live_grep = {
                     theme = "ivy",
+                    file_ignore_patterns = { ".git/*", "node_modules/*" },
+                    additional_args = function(_)
+                        return { "--hidden" }
+                    end,
                 },
 
                 help_tags = {

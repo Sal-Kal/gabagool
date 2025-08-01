@@ -6,7 +6,7 @@ vim.keymap.set("n", "<leader><leader>x", "<cmd>source %<CR>")
 -- General
 vim.keymap.set("i", "jk", "<Esc>")
 vim.keymap.set("n", "<leader>fs", "<cmd>w<CR>")
-vim.keymap.set("n", "<leader>bk", "<cmd>bdelete<CR>")
+vim.keymap.set("n", "<leader>bk", "<cmd>bdelete | bnext<CR>")
 -- vim.keymap.set("n", "<leader>o", "<cmd>Ex<CR>")
 
 -- Indenting
@@ -94,3 +94,11 @@ vim.keymap.set("n", "dh", ":nohl<CR>", { desc = "Remove search char highlights" 
 -- Window navigation
 vim.keymap.set("n", "<leader>w", "<C-w>")
 vim.keymap.set("n", "<leader>gW", "<C-w><C-O>")
+
+-- Command to get all highlight groups with their colors.
+vim.keymap.set(
+    "n",
+    "<F12>",
+    ":so $VIMRUNTIME/syntax/hitest.vim<CR>",
+    { noremap = true, silent = true }
+)

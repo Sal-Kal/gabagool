@@ -22,6 +22,7 @@ return {
                 json = { "prettier" },
                 markdown = { "prettier" },
                 lua = { "stylua" },
+                python = { "black" },
             },
             format_on_save = {
                 lsp_fallback = true,
